@@ -1,0 +1,82 @@
+.headercontent {
+    display: flex;
+    border: 3px black;
+    border-style: solid;
+}
+.headercontent img {
+    margin-right: 10px;
+    display: block;
+}
+.headercontent h1,
+.headetcontent p {
+    margin: 0;
+}
+.buttonPosition {
+    position: relative;
+    margin-left: auto;
+}
+
+.box {
+    border-style: solid;
+}
+
+#logintext {
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.logincontainer{
+    margin-bottom: 10px;
+}
+
+.labelstyle {
+    display: inline-block;
+    width: 150px;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:  rgba(128, 128, 128, 0.555);
+}
+
+#menuobject {
+    float: left;
+    border-right: 3px black;
+}
+
+#menuobject a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#menuobject a:hover {
+    background-color: green;
+}
+
+.admin_actionButton{
+    border: 3px black;
+    border-style: solid;
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+.innerbox{
+    border-style: solid;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+    
+}
+.positionlabel {
+    display: inline-block;
+    width: 150px;
+    font-weight: bolder;
+}
+
+

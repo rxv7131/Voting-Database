@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Candidates</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<body>
+    <div class="headercontent">
+        <!-- Placeholder Image -->
+        <img src="images/placeholder.png" height="100px" width="100px">
+        <div class="text">
+            <!-- Placeholders Name and Year -->
+            <h1>SocietyName PlaceHolder</h1>
+            <h2>Election 2022</h2>
+        </div>
+        <!-- Logout button does nothing right now, must log out of user -->
+        <button type="button" class="buttonPosition">Log Out</button>
+    </div>
+
+    <!-- Menu leads nowhere -->
+    <ul class="menu">
+        <li id="menuobject"><a href="#E">Election</a></li>
+        <li id="menuobject"><a href="#P">Positions</a></li>
+        <li id="menuobject"><a href="#Q">Questions</a></li>
+        <li id="menuobject"><a href="#C">Candidates</a></li>
+        <li id="menuobject"><a href="#R">Reporting</a></li>
+    </ul>
+
+    <!-- Gets position and candidate information  -->
+    <!-- Very basic but it's now 5:52 AM on a Wednesday so yeah -->
+    <div class="box">
+        <h2></h2>
+        <h3 class="innerbox">Candidate List</h3>
+        <form class="innerbox" action="/form/submit" method="post">
+            <div class="logincontainer">
+                <label class="positionlabel" for="position1">Position 1 name:</label>
+                <p>Candidate 1</p>
+                <p>Candidate 2</p>
+                <p>Candidate [i]</p>
+            </div>
+            <div class="logincontainer">
+                <label class="positionlabel" for="position1">Position 2 name:</label>
+                <p>Candidate 1</p>
+                <p>Candidate 2</p>
+                <p>Candidate [i]</p>
+            </div>
+            <div class="logincontainer">
+                <label class="positionlabel" for="position1">Position [i] name:</label>
+                <p>Candidate 1</p>
+                <p>Candidate 2</p>
+                <p>Candidate [i]</p>
+            </div>
+            <input type="submit" value="SAVE" />
+        </form>
+    
+        <!-- Everything below should be placed to the right of the candidate list -->
+        <form class="innerbox" action="/form/submit" method="post">
+            <div class="logincontainer">
+                <label for="cars">Select a positions:</label>
+                <select name="cars" id="cars">
+                    <option value="entry1">Entry 1</option>
+                    <option value="entry2">Entry 2</option>
+                    <option value="entry3">Entry 3</option>
+                    <option value="entry[i]">Entry [i]</option>
+                </select>
+                <div class="admin_actionButton">
+                    <!-- Buttons do nothing -->
+                    <button type="button">Add Candidate</button>
+                    <button type="button">Edit Candidate</button>
+                    <button type="button">Remove Candidate</button>
+                    <button type="button">Set Recommended Options</button>
+                </div>
+            
+            </div>
+        </form>
+
+    </div>
+</body>
+
+</html>

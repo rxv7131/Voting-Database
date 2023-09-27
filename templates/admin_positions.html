@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Positions</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<body>
+    <div class="headercontent">
+        <!-- Placeholder Image -->
+        <img src="images/placeholder.png" height="100px" width="100px">
+        <div class="text">
+            <!-- Placeholders Name and Year -->
+            <h1>SocietyName PlaceHolder</h1>
+            <h2>Election 2022</h2>
+        </div>
+        <!-- Logout button does nothing right now, must log out of user -->
+        <button type="button" class="buttonPosition">Log Out</button>
+    </div>
+
+    <!-- Menu leads nowhere -->
+    <ul class="menu">
+        <li id="menuobject"><a href="#E">Election</a></li>
+        <li id="menuobject"><a href="#P">Positions</a></li>
+        <li id="menuobject"><a href="#Q">Questions</a></li>
+        <li id="menuobject"><a href="#C">Candidates</a></li>
+        <li id="menuobject"><a href="#R">Reporting</a></li>
+    </ul>
+
+    <div class="admin_actionButton">
+        <!-- Buttons do nothing -->
+        <button type="button">Create New Position</button>
+        <button type="button">Reorder Positions</button>
+        <button type="button">Remove Positions</button>
+    </div>
+
+    <!-- Needs to get positions from database and display (i think idk the purpose of the page is  but it's in the wireframe so ill add it) -->
+    <!-- Placeholder information -->
+    <!-- "Functionality for reordering positions will be done via drag and drop within the given box. If after
+          implementation this proves too difficult for the user we can add a modal to modify the order of a
+          given set of positions" -->
+    <div class="box">
+        <h2>Positions</h2>
+        <h3 class="innerbox">Selected Positions</h3>
+        <form class="innerbox" action="/form/submit" method="post">
+            <div class="logincontainer">
+                <label class="labelstyle" for="position1">Position 1:</label>
+                Position Desricption
+            </div>
+            <div class="logincontainer">
+                <label class="labelstyle" for="position2">Position 2:</label>
+                Position Desricption
+            </div>
+            <div class="logincontainer">
+                <label class="labelstyle" for="position3">Position 3:</label>
+                Position Desricption
+            </div>
+            <div class="logincontainer">
+                <label class="labelstyle" for="position[i]">Position [i]:</label>
+                Position Desricption
+            </div>
+            
+            <input type="submit" value="SAVE" />
+        </form>
+
+
+        <div style="padding:20px; padding-left: 32px;">
+            <!-- Buttons should be to the right of the table -->
+            <button type="button">Copy Previous Positions</button>
+            <button type="button">Preview Positions</button>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Create Election</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<body>
+    <div class="headercontent">
+        <!-- Placeholder Image -->
+        <img src="../static/images/placeholder.png" height="100px" width="100px">
+        <div class="text">
+            <!-- Placeholders Name and Year -->
+            <h1>SocietyName PlaceHolder</h1>
+            <h2>Election 2022</h2>
+        </div>
+        <!-- Logout button does nothing right now, must log out of user -->
+        <button type="button" class="buttonPosition">Log Out</button>
+    </div>
+
+    <!-- Menu leads nowhere -->
+    <ul class="menu">
+        <li id="menuobject"><a href="#E">Election</a></li>
+        <li id="menuobject"><a href="#P">Positions</a></li>
+        <li id="menuobject"><a href="#Q">Questions</a></li>
+        <li id="menuobject"><a href="#C">Candidates</a></li>
+        <li id="menuobject"><a href="#R">Reporting</a></li>
+    </ul>
+
+    <div class="admin_actionButton">
+        <!-- Buttons do nothing -->
+        <button type="button">Create New Election</button>
+        <button type="button">Edit New Election</button>
+        <button type="button">Delete Election</button>
+    </div>
+
+    <!-- This does nothing yet -->
+    <div class="box">
+        <h2>Create New Election</h2>
+        <h3 class="innerbox">Election Info</h3>
+        <form class="innerbox" action="{{ url_for('admin_create')}}" method="post">
+            <div class="msg">{{ msg }}</div>
+            <div class="logincontainer">
+                <label class="labelstyle" for="societyId">Society ID:</label>
+                <input type="text" id="societyId" name="societyId"/>
+            </div>
+            <div class="logincontainer">
+                <label class="labelstyle" for="title">Title:</label>
+                <input type="text" id="title" name="title"/>
+            </div>
+            <div class="logincontainer">
+                <label class="labelstyle" for="startDate">Start Date:</label>
+                <input type="text" id="startDate" name="startDate"/>
+            </div>
+            <div class="logincontainer">
+                <label class="labelstyle" for="endDate">End Date:</label>
+                <input type="text" id="endDate" name="endDate"/>
+            </div>
+            <div class="logincontainer">
+                <label class="labelstyle" for="information">Information:</label>
+                <input type="text" id="information" name="information"/>
+            </div>
+            <input type="submit" value="SAVE" />
+        </form>
+        <div style="padding:20px; padding-left: 32px;">
+            <!-- Buttons should be to the right of the Election Info form (how can I copy a previous election?) -->
+            <button type="button">Copy Previous Election</button>
+            <button type="button">Preview Election</button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

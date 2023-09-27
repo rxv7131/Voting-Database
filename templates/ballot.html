@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ballot</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<body>
+    <div class="headercontent">
+        <!-- Placeholder Image -->
+        <img src="images/placeholder.png" height="100px" width="100px">
+        <div class="text">
+            <!-- Placeholders Name and Year -->
+            <h1>SocietyName PlaceHolder</h1>
+            <h2>Election 2022</h2>
+        </div>
+        <!-- Logout button does nothing right now, must log out of user -->
+        <button type="button" class="buttonPosition">Log Out</button>
+    </div>
+
+    <div class="box">
+        <h1>Ballot</h1>
+        <!-- Placeholder Ballot Info -->
+        <form class="innerbox" action="{{ url_for('ballot')}}" method="post" enctype="multipart/form-data">
+            <div class="ballotString">{{ ballotString|safe }}</div>
+        </form>
+    </div>
+
+    <!-- Everything below should be placed to the right of the Ballot -->
+    <div class="box">
+        <h2>Candidate Information</h2>
+        <P>Grab info from Database and displays here</P>
+        <p>Check Wireframe_V2 to see what it's supposed to look like</p>
+
+    </div>
+
+</body>
+
+</html>

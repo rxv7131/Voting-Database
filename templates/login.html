@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<body>
+    <div class="headercontent">
+        <!-- Placeholder Image -->
+        <img src="../images/placeholder.png" height="100px" width="100px">
+        <div class="text">
+            <!-- Placeholders Name and Year -->
+            <h1>SocietyName PlaceHolder</h1>
+            <h2>Election 2022</h2>
+        </div>
+    </div>
+
+    <div class="box">       
+        <h3 id="logintext">Login</h3>
+        <!-- action does nothing -->
+        <form action="{{ url_for('login')}}" method="post">
+            <div class="msg">{{ msg }}</div>
+            <div class="logincontainer">
+              <label class="labelstyle" for="name">Credential 1</label>
+              <input type="text" id="cred1" name="cred1"/>
+            </div>
+
+            <div class="logincontainer">
+              <label class="labelstyle" for="age">Credential 2</label>
+              <input type="password" id="cred2" name="cred2"/>
+            </div>
+
+            <input type="submit" value="Login"/>
+        </form>
+</body>
+
+</html>

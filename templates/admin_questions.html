@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Questions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="headercontent">
+        <!-- Placeholder Image -->
+        <img src="images/placeholder.png" height="100px" width="100px">
+        <div class="text">
+            <!-- Placeholders Name and Year -->
+            <h1>SocietyName PlaceHolder</h1>
+            <h2>Election 2022</h2>
+        </div>
+        <!-- Logout button does nothing right now, must log out of user -->
+        <button type="button" class="buttonPosition">Log Out</button>
+    </div>
+
+    <!-- Menu leads nowhere -->
+    <ul class="menu">
+        <li id="menuobject"><a href="#E">Election</a></li>
+        <li id="menuobject"><a href="#P">Positions</a></li>
+        <li id="menuobject"><a href="#Q">Questions</a></li>
+        <li id="menuobject"><a href="#C">Candidates</a></li>
+        <li id="menuobject"><a href="#R">Reporting</a></li>
+    </ul>
+
+    <div class="admin_actionButton">
+        <!-- Buttons do nothing -->
+        <button type="button">Create New Questions</button>
+        <button type="button">Reorder Questions</button>
+        <button type="button">Remove Questions</button>
+    </div>
+
+    <div class="box">
+        <h2>Questions</h2>
+        <h3 class="innerbox">Selected Questions</h3>
+        <form class="innerbox" action="/form/submit" method="post">
+            <div class="logincontainer">
+                <label class="labelstyle" for="position1">Question 1:</label>
+                Here
+            </div>
+            <div class="logincontainer">
+                <label class="labelstyle" for="position1">Question 2:</label>
+                Here
+            </div>
+            <div class="logincontainer">
+                <label class="labelstyle" for="position1">Question 3:</label>
+                Here
+            </div>
+            <div class="logincontainer">
+                <label class="labelstyle" for="position1">Question [i]:</label>
+                Here
+            </div>
+
+            <input type="submit" value="SAVE" />
+        </form>
+
+        <div style="padding:20px; padding-left: 32px;">
+            <!-- Buttons should be to the right of the Election Info form (i think when you copy, you copy one of the questions and its added)-->
+            <button type="button">Copy Previous Question</button>
+        </div>
+
+    </div>
+
+    </body>
+</html>
